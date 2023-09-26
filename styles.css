@@ -1,0 +1,152 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header {
+    height: 130px;
+    background-color: #333f48;
+}
+
+.mg_120 {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+/* Search Box */
+.top_line {
+    background-color: #ec8403;
+    height: 4px;
+}
+
+.serch_box {
+    position: absolute;
+    float: right;
+    width: 550px;
+    height: 46px;
+    border-left: 50px solid transparent;
+    border-top: 46px solid #ec8403;
+    right: 0;
+    z-index: 2;
+}
+
+.serch_box_blue {
+    position: absolute;
+    float: right;
+    width: 550px;
+    height: 46px;
+    border-left: 50px solid transparent;
+    border-top: 46px solid #00a6dc;
+    right: 5px;
+    z-index: 1;
+}
+
+.search_text {
+    position: absolute;
+    top: -38px;
+    right: 120px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Nav Bar */
+.header_container {
+    height: 126px;
+}
+
+nav {
+    width: 513px;
+    height: 25px;
+    position: absolute;
+    right: 120px;
+    top: 60px;
+}
+
+.nav_ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav_li {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+/* Main */
+.bg_img {
+    position: absolute;
+    z-index: -9999;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(image/inedx-bg.png);
+    height: 100%;
+}
+
+.col_left {
+    position: relative;
+    z-index: 1;
+}
+
+.col_left .card {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-content: end;
+    border-radius: 0;
+    padding-top: 150px;
+
+}
+
+.subtitle {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.col_right {
+    position: relative;
+    z-index: 1;
+}
+
+.col_right .card {
+    border: none;
+    background-color: rgba(236 , 132, 3, 0.9);
+    border-radius: 0;
+    padding: 40px 60px;
+}
+.box_p {
+    font-size: 46px;
+    color: white;
+    font-weight: bold;
+}
+.but_contact {
+    width: 180px;
+    height: auto;
+    padding: 12px 24px;
+    margin-top: 30px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
