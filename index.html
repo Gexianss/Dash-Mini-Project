@@ -19,13 +19,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Count</title>
   </head>
   <body>
     <header>
       <div class="top_line"></div>
       <div class="serch_box">
-        <div class="search_text">
+        <div class="search_text fw-semibold">
           <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
           <span>&emsp;&emsp;02 8218 8778 &emsp; | &emsp; XYZ@count.com.au</span>
         </div>
@@ -39,7 +46,7 @@
           </div>
           <div class="col p-0 pb-2">
             <nav class="">
-              <ul class="nav_ul">
+              <ul class="nav_ul fw-semibold">
                 <li class="nav_li"><a href="">Home</a></li>
                 <li class="nav_li"><a href="">About us</a></li>
                 <li class="nav_li"><a href="">Our Services</a></li>
@@ -50,29 +57,75 @@
         </div>
       </div>
     </header>
-    <main>
-        <div class="container-fluid p-0 img-fluid bg_img" style="height: 100%;">
 
-            <div class="row align-items-center" style="position: relative; height: 100%;">
-                <div class="col col_left mg_120">
-                    <div class="card">
-                        <p class="subtitle m-0">Discover the Count</p>
-                        <p class="title m-0">Difference</p>
-                    </div>
-                </div>
-                <div class="col col_right mg_120">
-                    <div class="card">
-                        <p class="box_p">A tailored plan to help you achieve your financial goals.</p>
-                        <button class="but_contact">
-                            Contact us
-                            <i class="fa-solid fa-caret-right fa-2xs" style="color: #ffffff; margin-left: 10px;"></i>
-                        </button>
-                    </div>
-                </div>
+    <main>
+      <div class="container-fluid p-0">
+        <div class="row">
+          <img
+            src="image/inedx-bg.png"
+            class="p-0 img-fluid position-relative"
+            alt=""
+          />
+          <div
+            class="col-6 p-0 position-absolute"
+            style="left: 120px; top: 50%"
+          >
+            <div class="card_left">
+              <p class="subtitle fw-semibold m-0">Discover the Count</p>
+              <p class="title fw-semibold m-0">Difference</p>
             </div>
+          </div>
+          <div
+            class="col-6 p-0 position-absolute"
+            style="right: 120px; top: 20%"
+          >
+            <div class="card_right">
+              <p class="box_p fw-semibold">
+                A tailored plan to help you achieve your financial goals.
+              </p>
+              <button class="but_contact fw-semibold">
+                Contact us
+                <i
+                  class="fa-solid fa-caret-right fa-2xs"
+                  style="color: #ffffff; margin-left: 10px"
+                ></i>
+              </button>
+            </div>
+          </div>
         </div>
-        
+        <div class="row" style="margin: 60px 0">
+          <div class="col-2 p-0" style="margin-left: 120px">
+            <p class="title_page02 fw-bold m-0">About</p>
+            <p class="title_page02 fw-bold m-0">Financial</p>
+            <p class="title_page02 fw-bold m-0">Services Ltd</p>
+          </div>
+          <div class="col p-0 ps-4" style="margin-right: 120px; display: flex;flex-direction: column; align-items: start; justify-content: space-between;">
+            <p class="subtitle_page02">
+              ABC is a financial advice business that offers a range of
+              investment, insurance, wealth management and retirement solutions
+              to clients in the Sydney community. We can help you with different
+              advice strategies depending on your stage of life and the goals
+              and objectives you have.
+            </p>
+            <p class="fw-bold subtitle_page02">
+              Speak with us today to discover how we can help you.
+            </p>
+            <button class="but_page02 fw-semibold">
+              Find out more<i
+                class="fa-solid fa-caret-right fa-2xs"
+                style="color: #ec8403; margin-left: 10px"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
     </main>
+
     <footer></footer>
   </body>
 

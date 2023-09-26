@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       .container {
+  position: relative; /* 將容器設置爲相對定位 */
+}
+
+.container img {
+  position: absolute; /* 圖像絕對定位 */
+  top: 0; /* 圖像頂部對齊容器頂部 */
+  left: 0; /* 圖像左側對齊容器左側 */
+  z-index: 1; /* 將圖像置於文字內容的下方 */
+}
+
+.container p {
+  position: absolute; /* 文字內容絕對定位 */
+  top: 0; /* 文字內容頂部對齊容器頂部 */
+  left: 0; /* 文字內容左側對齊容器左側 */
+  z-index: 2; /* 將文字內容置於圖像的上方 */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image/inedx-bg.png" alt="Your Image" />
+        <p>Your Text Goes Here</p>
+      </div>
+      
+</body>
+</html>
