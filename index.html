@@ -138,7 +138,7 @@
             <div class="col">
               <div class="card_page03">
                 <div class="box_page03">
-                  <img src="image/icon-money-dark.png" alt="" />
+                  <img src="image/icon-money-dark.png" alt="" id="img_money"/>
                   <p class="fw-semibold card_title_page03 m-0">
                     Investment Advice
                   </p>
@@ -157,7 +157,7 @@
             <div class="col">
               <div class="card_page03">
                 <div class="box_page03">
-                  <img src="image/icon-book-dark.png" alt="" />
+                  <img src="image/icon-book-dark.png" alt="" id="img_book"/>
                   <p class="fw-semibold card_title_page03 m-0">
                     Insurance Solutions
                   </p>
@@ -175,7 +175,7 @@
             <div class="col">
               <div class="card_page03">
                 <div class="box_page03">
-                  <img src="image/icon-earth-dark.png" alt="" />
+                  <img src="image/icon-earth-dark.png" alt="" id="img_earth"/>
                   <p class="fw-semibold card_title_page03 m-0">
                     Retirement Planning
                   </p>
@@ -193,7 +193,7 @@
             <div class="col">
               <div class="card_page03">
                 <div class="box_page03">
-                  <img src="image/icon-light-dark.png" alt="" />
+                  <img src="image/icon-light-dark.png" alt="" id="img_light"/>
                   <p class="fw-semibold card_title_page03 m-0">
                     Superannuation Strategies
                   </p>
@@ -373,8 +373,10 @@
             backgroundColor: "#333f48",
             boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
           });
-          $(this).find("img").attr("src", "image/icon-money.png");
-
+          $(this).find("#img_money").attr("src", "image/icon-money.png");
+          $(this).find("#img_book").attr("src", "image/icon-book.png");
+          $(this).find("#img_earth").attr("src", "image/icon-earth.png");
+          $(this).find("#img_light").attr("src", "image/icon-light.png");
           $(this)
             .find(".card_title_page03, .card_subtitle_page03")
             .css("color", "white");
@@ -389,7 +391,10 @@
             backgroundColor: "white",
             boxShadow: "none",
           });
-          $(this).find("img").attr("src", "image/icon-money-dark.png");
+          $(this).find("#img_money").attr("src", "image/icon-money-dark.png");
+          $(this).find("#img_book").attr("src", "image/icon-book-dark.png");
+          $(this).find("#img_earth").attr("src", "image/icon-earth-dark.png");
+          $(this).find("#img_light").attr("src", "image/icon-light-dark.png");
           $(this)
             .find(".card_title_page03, .card_subtitle_page03")
             .css("color", "#333f48");
