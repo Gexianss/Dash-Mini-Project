@@ -49,8 +49,6 @@ header {
     top: -38px;
     right: 120px;
     color: white;
-    font-family: 'Open Sans', sans-serif;
-
 }
 
 /* Nav Bar */
@@ -78,7 +76,6 @@ nav {
 .nav_li {
     font-size: 18px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -103,16 +100,12 @@ a:visited {
     font-size: 29px;
     color: #173045;
     letter-spacing: -1.16px;
-    font-family: 'Open Sans', sans-serif;
-
 }
 
 .title {
     font-size: 70px;
     color: #173045;
     letter-spacing: -3.5px;
-    font-family: 'Open Sans', sans-serif;
-
 }
 
 .card_right {
@@ -127,10 +120,9 @@ a:visited {
     font-size: 46px;
     color: white;
     line-height: -1.61px;
-    font-family: 'Open Sans', sans-serif;
 }
 
-.but_contact {
+.btn_contact {
     width: 180px;
     height: auto;
     padding: 12px 24px;
@@ -146,7 +138,6 @@ a:visited {
 .title_page02 {
     line-height: 150%;
     font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
     color: #333f48;
 
 }
@@ -154,17 +145,15 @@ a:visited {
 .subtitle_page02 {
     font-size: 18px;
     margin-bottom: 1.25rem;
-    font-family: 'Open Sans', sans-serif;
     color: #333f48;
 
 }
 
-.but_page02 {
+.btn_page02 {
     border: none;
     background-color: rgba(0, 0, 0, 0);
     color: #ec8403;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -172,12 +161,13 @@ a:visited {
 .title_page03 {
     font-size: 36px;
     line-height: 150%;
-    font-family: 'Open Sans', sans-serif;
     padding-top: 60px;
     padding-bottom: 40px;
     text-align: center;
     color: #333f48;
+    margin: 0;
 }
+
 .card_page03 {
     height: 330px;
     background-color: white;
@@ -201,27 +191,130 @@ a:visited {
     font-size: 18px;
     line-height: 150%;
     color: #333f48;
-    font-family: 'Open Sans', sans-serif;
-padding: 6px 0;
-text-align: center;
+    padding: 6px 0;
+    text-align: center;
 }
 
 .card_subtitle_page03 {
     font-size: 16;
     line-height: 150%;
-    font-family: 'Open Sans', sans-serif;
     color: #333f48;
 }
-.but_page03 {
-border: 1px solid #ec8403;
-color: #333f48;
-font-size: 16px;
-line-height: 150%;
-padding: 9px 20px;
-background-color: white;
-display: inline-block;
+
+.btn_page03 {
+    border: 1px solid #ec8403;
+    color: #333f48;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 9px 20px;
+    background-color: white;
+    display: inline-block;
 }
-.but_page03 i{
-color: #ec8403;
-margin-left: 6px;
+
+.btn_page03 i {
+    color: #ec8403;
+    margin-left: 6px;
+}
+
+/* page04 */
+
+.title_page04 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+
+}
+
+.box_page04 {
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+.box_page04_p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #333f48;
+}
+
+.box_page04_title {
+    font-size: 28px;
+    line-height: 150%;
+    padding: 16px 0;
+}
+
+.box_page04_subtitle {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.card_page04_body {
+    padding: 0 16px 30px 16px;
+    margin-top: 30px;
+}
+
+.card_page04_date {
+    font-size: 14px;
+    line-height: 150%;
+    color: #333f48;
+
+}
+
+
+.card_page04_title {
+    font-size: 20px;
+    line-height: 150%;
+    color: #333f48;
+    margin: 14px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+
+.card_page04_subtitle {
+    font-size: 16px;
+    line-height: 150%;
+    color: #333f48;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.card_link {}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 63, 72, 0.7);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.overlay_text {
+    color: white;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.card_link:hover .overlay {
+    opacity: 1;
+}
+.btn_page04 {
+color: #333f48;
+padding: 9px 20px;
+border: 1px solid #ec8403;
+background-color: rgba(0, 0, 0, 0);
+font-size: 16px;
+font-weight: 600;
+line-height: 150%;
 }
