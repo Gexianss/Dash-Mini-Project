@@ -99,7 +99,16 @@
             <p class="title_page02 fw-bold m-0">Financial</p>
             <p class="title_page02 fw-bold m-0">Services Ltd</p>
           </div>
-          <div class="col p-0 ps-4" style="margin-right: 120px; display: flex;flex-direction: column; align-items: start; justify-content: space-between;">
+          <div
+            class="col p-0 ps-4"
+            style="
+              margin-right: 120px;
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              justify-content: space-between;
+            "
+          >
             <p class="subtitle_page02">
               ABC is a financial advice business that offers a range of
               investment, insurance, wealth management and retirement solutions
@@ -118,7 +127,85 @@
             </button>
           </div>
         </div>
-        <div class="row"></div>
+        <div class="container-fluid p-0" style="background-color: #f2f2f2">
+          <p class="title_page03 fw-bold">What we offer</p>
+          <div class="row" style="margin-left: 120px; margin-right: 120px">
+            <div class="col">
+              <div class="card_page03">
+                <div class="box_page03">
+                  <img src="image/icon-money-dark.png" alt="" />
+                  <p class="fw-semibold card_title_page03 m-0">
+                    Investment Advice
+                  </p>
+                  <p class="card_subtitle_page03 m-0">
+                    The types of investment options available and how they can
+                    build wealth.
+                  </p>
+                </div>
+                <button class="but_page03">
+                  <div>
+                    Discover more<i class="fa-solid fa-caret-right fa-2xs"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_page03">
+                <div class="box_page03">
+                  <img src="image/icon-book-dark.png" alt="" />
+                  <p class="fw-semibold card_title_page03 m-0">
+                    Insurance Solutions
+                  </p>
+                  <p class="card_subtitle_page03 m-0">
+                    Providing peace of mind for you and your family.
+                  </p>
+                </div>
+                <button class="but_page03">
+                  <div>
+                    Discover more<i class="fa-solid fa-caret-right fa-2xs"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_page03">
+                <div class="box_page03">
+                  <img src="image/icon-earth-dark.png" alt="" />
+                  <p class="fw-semibold card_title_page03 m-0">
+                    Retirement Planning
+                  </p>
+                  <p class="card_subtitle_page03 m-0">
+                    Setting yourself up for a comfortable post-work lifestyle.
+                  </p>
+                </div>
+                <button class="but_page03">
+                  <div>
+                    Discover more<i class="fa-solid fa-caret-right fa-2xs"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_page03">
+                <div class="box_page03">
+                  <img src="image/icon-light-dark.png" alt="" />
+                  <p class="fw-semibold card_title_page03 m-0">
+                    Superannuation Strategies
+                  </p>
+                  <p class="card_subtitle_page03 m-0">
+                    Getting the most out of super to support your retirement.
+                  </p>
+                </div>
+
+                <button class="but_page03">
+                  <div>
+                    Discover more<i class="fa-solid fa-caret-right fa-2xs"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row"></div>
         <div class="row"></div>
         <div class="row"></div>
@@ -135,5 +222,43 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
-  <script></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".card_page03").hover(
+        // mouse over
+        function () {
+          $(this).css({
+            backgroundColor: "#333f48",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          });
+          $(this).find("img").attr("src", "image/icon-money.png");
+
+          $(this)
+            .find(".card_title_page03, .card_subtitle_page03")
+            .css("color", "white");
+          $(this)
+            .find(".but_page03")
+            .css({ backgroundColor: "#ec8403", color: "white" });
+          $(this).find(".but_page03 i").css("color", "white");
+        },
+        // mouse out
+        function () {
+          $(this).css({
+            backgroundColor: "white",
+            boxShadow: "none",
+          });
+          $(this).find("img").attr("src", "image/icon-money-dark.png");
+          $(this)
+            .find(".card_title_page03, .card_subtitle_page03")
+            .css("color", "#333f48");
+          $(this)
+            .find(".but_page03")
+            .css({ backgroundColor: "white", color: "#333f48" });
+        }
+      );
+    });
+  </script>
 </html>
