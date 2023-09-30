@@ -51,7 +51,7 @@
       <div class="container-fluid">
         <div class="row align-items-end">
           <div class="col pt-3 mg_120 p-0">
-            <img src="image/logo.png" alt="logo" />
+            <img src="image/logo.png" alt="logo" class="img_logo" />
           </div>
           <!-- nav bar -->
           <div class="col p-0 pb-2">
@@ -72,18 +72,16 @@
       <div class="container-fluid p-0">
         <!-- page01 -->
         <div class="row g-0">
-          <div style="position: relative;">
-          <img
-            src="image/inedx-bg.png"
-            class="p-0 img-fluid"
-            alt=""
-            style="width: 100%;"
-          />
+          <div style="position: relative">
+            <img
+              src="image/inedx-bg.png"
+              class="p-0 img-fluid"
+              alt=""
+              style="width: 100%"
+            />
           </div>
 
-          <div
-            class="content_wrapper" style="padding: 0 80px 0 120px;"
-          >
+          <div class="content_wrapper" style="padding: 0 80px 0 120px">
             <div class="card_left">
               <p class="subtitle fw-semibold m-0">Discover the Count</p>
               <p class="title fw-semibold m-0">Difference</p>
@@ -104,14 +102,14 @@
         </div>
 
         <!-- page02 -->
-        <div class="row" style="margin: 60px 0">
-          <div class="col-2 p-0" style="margin-left: 120px">
+        <div class="row margin_top margin_bottom" style="margin: 60px 0">
+          <div class="col-2 p-0 margin_left" style="margin-left: 120px">
             <p class="title_page02 fw-bold m-0">About</p>
             <p class="title_page02 fw-bold m-0">Financial</p>
             <p class="title_page02 fw-bold m-0">Services Ltd</p>
           </div>
           <div
-            class="col p-0 ps-4"
+            class="col p-0 ps-4 margin_right" 
             style="
               margin-right: 120px;
               display: flex;
@@ -142,7 +140,7 @@
         <!-- page03 -->
         <div class="container-fluid p-0" style="background-color: #f2f2f2">
           <p class="title_page03 fw-bold">What we offer</p>
-          <div class="row" style="margin-left: 120px; margin-right: 120px">
+          <div class="row" style="margin-left: 120px; margin-right: 120px;padding-bottom: 30px;">
             <div class="col p-0">
               <div class="card_page03">
                 <div class="box_page03">
@@ -226,12 +224,13 @@
             <div class="row g-0">
               <p class="title_page04 fw-bold m-0">Latest articles</p>
             </div>
-            <div class="row g-0" style="padding: 0 120px">
+            <div class="row g-0 padding_page04">
               <div class="box_page04" style="padding: 30px 40px">
                 <img
                   src="image/Adrian Hondros avatar.png"
                   alt=""
                   style="padding-right: 40px"
+                  class="box_page04_img"
                 />
                 <div>
                   <p class="box_page04_p m-0">29 Jul 2022</p>
@@ -376,7 +375,7 @@
         </div>
 
         <!-- page05 -->
-        <div class="row g-0" style="padding: 0px 120px 0 130px">
+        <div class="row g-0 padding_page05" >
           <div class="col-3">
             <div>
               <p class="title_page05 fw-bold m-0">Testimonials</p>
@@ -486,7 +485,7 @@
         </div>
 
         <!-- form -->
-        <div class="row g-0" style="padding: 0 315px">
+        <div class="row g-0 form_padding">
           <form action="">
             <legend class="legend_title m-0" style="padding-bottom: 63px">
               Write to us
@@ -777,7 +776,7 @@
               </div>
             </div>
             <div class="row" style="padding-bottom: 40px">
-              <div class="col-6">
+              <div class="col-xl-6 col-md-6 col-12">
                 <div class="form_fieldset_regular">
                   <label for="time" class="form-label form_fieldset_label"
                     >When do you want to Save it by? (in Years)</label
@@ -787,7 +786,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-xl-6 col-md-6 col-12">
                 <div class="form_fieldset">
                   <label
                     for="moneySaveAlready"
@@ -862,7 +861,7 @@
             reliance on information within.
           </p>
         </div>
-        <div class="">
+        <div class="footer_overflow">
           <p class="footer_title">Contact Us</p>
           <p class="footer_subtitle">
             Level 8, 1 Chifley Square Sydney NSW 2000
@@ -1053,6 +1052,44 @@
 
         time.append(option);
       }
+
+      function updateMarginLeft() {
+        const screenWidth = $(window).width();
+        let marginLeft;
+        let marginRight;
+        let marginTop;
+        let marginBottom;
+
+        if (screenWidth > 1199) {
+          marginLeft = 120;
+          marginRight = 120;
+          marginTop = 60;
+          marginBottom = 60;
+        } 
+        if (screenWidth >= 768 && screenWidth <= 1199) {
+          marginLeft = 60;
+          marginRight = 60;
+          marginTop = 40;
+          marginBottom = 40;
+        } 
+        if (screenWidth <= 767) {
+          marginLeft = 30;
+          marginRight = 30;
+          marginTop = 20;
+          marginBottom = 20;
+        }
+
+        // Set the margin-left style directly
+        $(".margin_left").css("margin-left", marginLeft + "px");
+        $(".margin_right").css("margin-right", marginRight + "px");
+        $(".margin_top").css("margin-top", marginTop + "px");
+        $(".margin_bottom").css("margin-bottom", marginBottom + "px");
+      }
+      updateMarginLeft();
+
+      $(window).resize(function () {
+        updateMarginLeft();
+      });
     });
   </script>
 </html>
