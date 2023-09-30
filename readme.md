@@ -6,5 +6,5 @@
 6. 全部的script都用jQuery寫
 7. 表格全選是找input的checkbox，然後prop checked屬性
 8. 表格的數字是用replace定義,的位置，然後用toLocaleString()回傳值
-9. 表單的 <option> 是寫迴圈讓他跑30個
+9. 表單的 option 是寫迴圈讓他跑30個
 10. 機器人是找google的recaptcha api
