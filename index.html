@@ -109,7 +109,7 @@
             <p class="title_page02 fw-bold m-0">Services Ltd</p>
           </div>
           <div
-            class="col p-0 ps-4 margin_right" 
+            class="col p-0 ps-4 margin_right"
             style="
               margin-right: 120px;
               display: flex;
@@ -140,7 +140,14 @@
         <!-- page03 -->
         <div class="container-fluid p-0" style="background-color: #f2f2f2">
           <p class="title_page03 fw-bold">What we offer</p>
-          <div class="row" style="margin-left: 120px; margin-right: 120px;padding-bottom: 30px;">
+          <div
+            class="row"
+            style="
+              margin-left: 120px;
+              margin-right: 120px;
+              padding-bottom: 30px;
+            "
+          >
             <div class="col p-0">
               <div class="card_page03">
                 <div class="box_page03">
@@ -375,7 +382,7 @@
         </div>
 
         <!-- page05 -->
-        <div class="row g-0 padding_page05" >
+        <div class="row g-0 padding_page05">
           <div class="col-3">
             <div>
               <p class="title_page05 fw-bold m-0">Testimonials</p>
@@ -823,6 +830,7 @@
               "
               ></div>
             </div>
+            <!-- submit -->
             <div class="col">
               <button type="submit" class="btn_submit">
                 Submit<i
@@ -1008,16 +1016,6 @@
         }
       );
 
-      // textarea
-      $("#message").focus(function () {
-        $(this).css({ boxShadow: "none", borderColor: "#333333" });
-      });
-      $("#message").blur(function () {
-        if ($(this).val() === "") {
-          $(this).css("border-color", "#9B9B9B");
-        }
-      });
-
       // input format number thousands separator
       const $incomeInput = $("#income");
       const $moneySaveInput = $("#moneySave");
@@ -1040,6 +1038,16 @@
 
         $input.val(formattedValue);
       }
+
+      // textarea
+      $("#message").focus(function () {
+        $(this).css({ boxShadow: "none", borderColor: "#333333" });
+      });
+      $("#message").blur(function () {
+        if ($(this).val() === "") {
+          $(this).css("border-color", "#9B9B9B");
+        }
+      });
 
       // time select option30
       const time = $("#time");
@@ -1065,13 +1073,13 @@
           marginRight = 120;
           marginTop = 60;
           marginBottom = 60;
-        } 
+        }
         if (screenWidth >= 768 && screenWidth <= 1199) {
           marginLeft = 60;
           marginRight = 60;
           marginTop = 40;
           marginBottom = 40;
-        } 
+        }
         if (screenWidth <= 767) {
           marginLeft = 30;
           marginRight = 30;
