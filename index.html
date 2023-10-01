@@ -140,15 +140,8 @@
         <!-- page03 -->
         <div class="container-fluid p-0" style="background-color: #f2f2f2">
           <p class="title_page03 fw-bold">What we offer</p>
-          <div
-            class="row"
-            style="
-              margin-left: 120px;
-              margin-right: 120px;
-              padding-bottom: 30px;
-            "
-          >
-            <div class="col p-0">
+          <div class="row g-0 card_page03_padding">
+            <div class="col-xl col-md-5 col-12 p-0" style="margin-right: 40px">
               <div class="card_page03">
                 <div class="box_page03">
                   <img src="image/icon-money-dark.png" alt="" id="img_money" />
@@ -167,7 +160,7 @@
                 </button>
               </div>
             </div>
-            <div class="col p-0" style="margin: 0 40px">
+            <div class="col-xl col-md-5 col-12 p-0" style="margin-right: 40px">
               <div class="card_page03">
                 <div class="box_page03">
                   <img src="image/icon-book-dark.png" alt="" id="img_book" />
@@ -185,7 +178,7 @@
                 </button>
               </div>
             </div>
-            <div class="col p-0" style="margin-right: 40px">
+            <div class="col-xl col-md-5 col-12 p-0" style="margin-right: 40px">
               <div class="card_page03">
                 <div class="box_page03">
                   <img src="image/icon-earth-dark.png" alt="" id="img_earth" />
@@ -203,7 +196,7 @@
                 </button>
               </div>
             </div>
-            <div class="col p-0">
+            <div class="col-xl col-md-5 col-12 p-0">
               <div class="card_page03">
                 <div class="box_page03">
                   <img src="image/icon-light-dark.png" alt="" id="img_light" />
@@ -254,15 +247,14 @@
               </div>
             </div>
             <div
-              class="row g-0"
+              class="row g-0 card_padding"
               style="
-                padding: 40px 120px 48px 120px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
               "
             >
-              <div class="col" style="padding: 0 42px">
+              <div class="col-xl col-md-4 col-12" style="padding: 0 42px">
                 <a href="#" class="card_link">
                   <div
                     class="card"
@@ -270,6 +262,7 @@
                       border: none;
                       border-radius: 0px;
                       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                      height: 100%;
                     "
                   >
                     <div class="image-container" style="position: relative">
@@ -297,7 +290,11 @@
                   </div>
                 </a>
               </div>
-              <div class="col" style="padding: 0 18px">
+              <div
+                class="col-xl col-md-4 col-12"
+                style="padding: 0 18px"
+                id="wealthAxis"
+              >
                 <a href="#" class="card_link">
                   <div
                     class="card"
@@ -333,7 +330,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col" style="padding: 0 42px">
+              <div class="col-xl col-md-4 col-12" style="padding: 0 42px">
                 <a href="#" class="card_link">
                   <div
                     class="card"
@@ -341,6 +338,7 @@
                       border: none;
                       border-radius: 0px;
                       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                      height: 100%;
                     "
                   >
                     <div class="image-container" style="position: relative">
@@ -1087,7 +1085,7 @@
           marginBottom = 20;
         }
 
-        // Set the margin-left style directly
+        // Set the margin style
         $(".margin_left").css("margin-left", marginLeft + "px");
         $(".margin_right").css("margin-right", marginRight + "px");
         $(".margin_top").css("margin-top", marginTop + "px");
@@ -1098,6 +1096,23 @@
       $(window).resize(function () {
         updateMarginLeft();
       });
+
+      // page04 card padding resize
+      function setPadding() {
+        const windowWidth = $(window).width();
+        const $wealthAxis = $("#wealthAxis");
+
+        if (windowWidth > 1200) {
+          $wealthAxis.css("padding", "0 18px");
+        } else if (windowWidth >= 768) {
+          $wealthAxis.css("padding", "0 18px");
+        } else {
+          $wealthAxis.css("padding", "20px 42px");
+        }
+      }
+
+      setPadding();
+      $(window).resize(setPadding);
     });
   </script>
 </html>

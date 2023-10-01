@@ -8,3 +8,4 @@
 8. 表格的數字是用replace定義,的位置，然後用toLocaleString()回傳值
 9. 表單的 option 是寫迴圈讓他跑30個
 10. 機器人是找google的recaptcha api
+11. 斷點依照1200px以上、768px以下，切了三種版本。 

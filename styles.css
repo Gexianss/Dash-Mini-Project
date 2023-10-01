@@ -462,6 +462,10 @@ a:hover {
     margin: 0;
 }
 
+.card_page03_padding {
+padding: 0 120px 30px 120px;
+}
+
 .card_page03 {
     height: 330px;
     background-color: white;
@@ -524,6 +528,10 @@ a:hover {
         margin: 0;
     }
 
+    .card_page03_padding {
+        padding: 0 60px 20px 60px;
+        }
+
     .card_page03 {
         background-color: white;
         color: #333f48;
@@ -576,6 +584,10 @@ a:hover {
         color: #333f48;
         margin: 0;
     }
+
+    .card_page03_padding {
+        padding: 0 30px 20px 30px;
+        }
 
     .card_page03 {
         height: 220px;
@@ -654,6 +666,10 @@ a:hover {
 .box_page04_subtitle {
     font-size: 20px;
     line-height: 150%;
+}
+
+.card_padding {
+    padding: 40px 120px 48px 120px;
 }
 
 .card_page04_body {
@@ -765,6 +781,10 @@ height: 40%;    }
     
     .box_page04_subtitle {
 display: none;
+    }
+
+    .card_padding {
+        padding: 40px 60px 48px 60px;
     }
     
     .card_page04_body {
@@ -879,6 +899,10 @@ height: 40%;    }
     
     .box_page04_subtitle {
 display: none;
+    }
+
+    .card_padding {
+        padding: 20px 30px 48px 30px;
     }
     
     .card_page04_body {
